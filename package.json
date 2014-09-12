@@ -1,0 +1,25 @@
+{
+	"name": "parsekit",
+	"version": "0.0.1",
+	"author": "Izaak Schroeder",
+	"homepage": "http://izaakschroeder.github.io/parsekit",
+	"repository": {
+		"type": "git",
+		"url": "http://www.github.com/izaakschroeder/parsekit.git"
+	},
+	"contributors": [
+
+	],
+	"license": "CC0-1.0",
+	"dependencies": {
+		"lodash": "*"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"chai": "*",
+		"chai-thing": "*"
+	},
+	"scripts": {
+		"test": "mocha test"
+	}
+}
