@@ -1,3 +1,5 @@
 # ParseKit
 
-https://people.mozilla.org/~jorendorff/es6-draft.html#sec-ecmascript-language-lexical-grammar
+[![Build Status](https://travis-ci.org/izaakschroeder/parsekit.svg?branch=master)](https://travis-ci.org/izaakschroeder/parsekit)
+
+A tool for parsing.
