@@ -16,10 +16,18 @@
 	},
 	"devDependencies": {
 		"mocha": "*",
+		"blanket": "*",
+		"mocha-term-cov-reporter": "*",
 		"chai": "*",
 		"chai-things": "*"
 	},
 	"scripts": {
 		"test": "mocha test"
+	},
+	"config": {
+		"blanket": {
+			"pattern": [ "lib" ],
+			"data-cover-never": [ "node_modules", "test" ]
+		}
 	}
 }
