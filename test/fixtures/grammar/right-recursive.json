@@ -1,0 +1,9 @@
+{
+	"nonTerminals": [ "S" ],
+	"tokens": [ "x" ],
+	"productions": [
+		{ "symbol": "S", "derives": [ "x", "S" ] },
+		{ "symbol": "S", "derives": [ "x" ] }
+	],
+	"startSymbol": "S"
+}
