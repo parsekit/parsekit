@@ -1,10 +1,11 @@
+sudo: false
 language: node_js
 node_js:
-- '0.11'
+- '0.12'
 - '0.10'
-deploy:
-  provider: npm
-  on:
-    tags: true
-  api_key:
-    secure: nLCLpdBjpXpKogP/ENFr2WK4h7W5Ts8xfthI4mIYf8Wq0nfYSVlK3asC8Yv6gLMySkGujdp0i28Fq7vZHXjxYVFZIXC2NbM5i34BrNzJuCjqqSQJVlvOw+mE3l+lgSs6EDQexmgzG7gqHv7OxPIvfGG0XnwMVXm5YvAQXgyWuwc=
+- 'iojs-1'
+before_install:
+- npm install -g "npm@>=1.4.6"
+after_success:
+- npm install coveralls
+- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
